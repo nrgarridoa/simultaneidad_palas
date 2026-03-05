@@ -2,8 +2,6 @@
 
 Visualizacion operativa y analitica de palas mineras desarrollada en **Python + Plotly Dash**.
 
-Referencia visual: dashboard de monitoreo de Antamina.
-
 ---
 
 ## Descripcion General
@@ -122,15 +120,3 @@ python app.py
 
 Acceder al dashboard en: `http://127.0.0.1:8050`
 
----
-
-## Autor
-
-**Nilson R. Garrido Asenjo**
-Ingeniero de Minas | Data Analyst | Python Developer
-
----
-
-## Licencia
-
-Este proyecto se distribuye bajo la licencia MIT.
