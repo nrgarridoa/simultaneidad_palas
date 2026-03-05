@@ -1,0 +1,360 @@
+/* ========================================
+   SIMULTANEIDAD DE PALAS - DASHBOARD
+   Estilo industrial minero profesional
+   ======================================== */
+
+/* --- Reset y base --- */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F0F2F5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #1F2E4A;
+}
+
+.app-wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 12px 40px 12px;
+}
+
+/* ========== HEADER ========== */
+.header-container {
+    background-color: #004D40;
+    border-radius: 0 0 12px 12px;
+    padding: 14px 28px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin: 0 0 12px 0;
+}
+
+.header-title {
+    font-size: 24px;
+    font-weight: 900;
+    margin: 0;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+.header-timestamp {
+    font-size: 13px;
+    color: #B2DFDB;
+    font-weight: 600;
+}
+
+/* ========== FILTROS ========== */
+.filters-bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 16px;
+    background: #ffffff;
+    padding: 16px 24px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    margin-bottom: 16px;
+}
+
+.filters-bar label {
+    font-weight: 700;
+    color: #004D40;
+    font-size: 13px;
+    margin-bottom: 4px;
+    display: block;
+}
+
+/* Fecha con flechas de navegacion */
+.filtro-fecha-wrapper {
+    flex: 0 0 auto;
+    min-width: 260px;
+}
+
+.fecha-nav-group {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.fecha-dropdown {
+    flex: 1;
+    min-width: 160px;
+}
+
+.btn-nav {
+    width: 34px;
+    height: 36px;
+    border: 1px solid #B2DFDB;
+    border-radius: 6px;
+    background: #F5F5F5;
+    color: #004D40;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.15s, border-color 0.15s;
+    padding: 0;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.btn-nav:hover {
+    background: #E0F2F1 !important;
+    border-color: #004D40;
+    transform: none;
+}
+
+/* Filtro tipo detencion en tabla detalle */
+.tipo-detencion-filter {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+/* ========== GANTT SECTION ========== */
+.gantt-section {
+    background: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    padding: 16px 20px 8px 20px;
+    margin-bottom: 16px;
+}
+
+.gantt-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.section-title {
+    font-size: 17px;
+    font-weight: 800;
+    color: #1F2E4A;
+    margin: 0;
+}
+
+.legend-bar {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 13px;
+    color: #2C3E50;
+}
+
+.gantt-fecha-label {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    color: #004D40;
+    margin: 4px 0 8px 0;
+}
+
+
+/* ========== KPIs ========== */
+.kpi-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+}
+
+.kpi-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    display: flex;
+    align-items: center;
+    padding: 14px 18px;
+    flex: 1 1 200px;
+    min-width: 180px;
+    transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.kpi-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.kpi-icon-box {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 14px;
+    flex-shrink: 0;
+}
+
+.kpi-green { background-color: #E8F5E9; color: #2E7D32; }
+.kpi-red   { background-color: #FFEBEE; color: #C62828; }
+.kpi-blue  { background-color: #E3F2FD; color: #1565C0; }
+.kpi-orange { background-color: #FFF3E0; color: #E65100; }
+
+.kpi-label {
+    margin: 0;
+    font-size: 12px;
+    color: #5A6B8A;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.kpi-value {
+    margin: 2px 0 0 0;
+    font-size: 22px;
+    color: #1F2E4A;
+    font-weight: 800;
+}
+
+/* ========== TABLAS ========== */
+.tables-container {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.table-panel {
+    flex: 1 1 400px;
+    min-width: 360px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    padding: 16px 18px;
+}
+
+.table-header-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.table-title {
+    font-size: 15px;
+    font-weight: 800;
+    color: #1F2E4A;
+    margin: 0;
+    text-decoration: underline;
+    text-decoration-color: #004D40;
+    text-underline-offset: 4px;
+}
+
+.table-subtitle {
+    font-size: 12px;
+    color: #7F8C8D;
+    font-weight: 600;
+    border-left: 1px solid #BDC3C7;
+    padding-left: 10px;
+}
+
+.btn-export {
+    background-color: #004D40;
+    color: white;
+    border: none;
+    padding: 6px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 12px;
+    margin-left: auto;
+    transition: background-color 0.2s;
+}
+
+.btn-export:hover {
+    background-color: #00695C !important;
+    transform: none;
+}
+
+/* ========== TABLA RESUMEN (HTML) ========== */
+.resumen-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.resumen-table th,
+.resumen-table td {
+    padding: 6px 12px;
+    border-bottom: 1px solid #ECF0F1;
+}
+
+.resumen-header-row th {
+    background-color: #EAF2F8;
+    color: #1F2E4A;
+    font-weight: 700;
+    font-size: 12px;
+    text-align: center;
+}
+
+.resumen-table tr:hover {
+    background-color: #F8F9FA;
+}
+
+/* ========== TABLA DETALLE (HTML estilo Antamina) ========== */
+.detalle-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+.detalle-table th,
+.detalle-table td {
+    padding: 5px 10px;
+    border-bottom: 1px solid #ECF0F1;
+    text-align: center;
+}
+
+.detalle-header-row th {
+    background-color: #EAF2F8;
+    color: #1F2E4A;
+    font-weight: 700;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.detalle-total-row td {
+    border-top: 2px solid #004D40;
+    border-bottom: 2px solid #004D40;
+    background-color: #F5F7FA;
+}
+
+.detalle-perdida-row td {
+    background-color: #FFF8F0;
+}
+
+.detalle-table tr:hover {
+    background-color: #F8F9FA;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 900px) {
+    .tables-container {
+        flex-direction: column;
+    }
+
+    .kpi-container {
+        flex-direction: column;
+    }
+
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+    }
+}
