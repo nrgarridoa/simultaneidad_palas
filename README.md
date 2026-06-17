@@ -124,7 +124,7 @@ datos filtrados.
 [![YouTube](https://img.shields.io/badge/YouTube-nrgarridoa-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@nrgarridoa)
 [![Gmail](https://img.shields.io/badge/Gmail-nrgarridoa@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:nrgarridoa@gmail.com)
 
-Ingeniero de Minas (UNC, primer puesto) y Administrador Industrial (SENATI) con trayectoria en gran minería, industria farmacéutica y manufactura de alimentos. He liderado equipos de campo en Newmont Yanacocha, Gold Fields y Silver Mountain, dirigido proyectos tecnológicos en CODE UNI y ejecutado consultoría de reconciliación de mineral para Chinalco y reportabilidad operativa en gran minería.
+Ingeniero de Minas (UNC, primer puesto) y Administrador Industrial (SENATI) con trayectoria en gran minería, industria farmacéutica y manufactura de alimentos. He liderado equipos de campo en Newmont Yanacocha, Gold Fields y Silver Mountain, dirigido proyectos tecnológicos en CODE UNI y ejecutado consultoría de reconciliación de mineral para Chinalco y desarrollo de reportería de seguridad operativa (monitoreo de fatiga y somnolencia de flota) para Antamina.
 
 Mi enfoque es transformar datos operativos en inteligencia para la toma de decisiones, combinando experiencia de campo con herramientas como Power BI, Python, SQL y DAX. Piloto de drones con operaciones en superficie (fotogrametría, volumetría) y en subterránea (LiDAR con Elios 3 para Flyability). Docente de Power BI y Python aplicado a minería.
 
