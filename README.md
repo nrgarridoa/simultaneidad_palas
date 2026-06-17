@@ -18,6 +18,8 @@ de operaciones **tomar decisiones basadas en datos** sobre la disponibilidad de 
 equipos, las causas de detención y las pérdidas de producción en cada turno.
 
 [![Ver Dashboard en Vivo](https://img.shields.io/badge/Ver%20Dashboard%20en%20Vivo-Render-46E3B7?style=for-the-badge&logo=render&logoColor=black)](https://simultaneidad-palas.onrender.com)
+&nbsp;
+![Repositorio vitrina](https://img.shields.io/badge/Repositorio-vitrina-475569?style=for-the-badge&logo=github&logoColor=white)
 
 ---
 
@@ -191,6 +193,16 @@ de los parámetros de cada modelo de pala.
 | **Git / GitHub** | Versionamiento y publicación |
 
 </details>
+
+---
+
+## Sobre el código
+
+Este es un **repositorio vitrina**: documenta la solución y enlaza el demo en vivo.
+El código de la aplicación se mantiene en un repositorio privado para proteger la
+implementación. **Con gusto hago un recorrido por el código en una entrevista técnica
+o facilito el acceso bajo solicitud** — escríbeme por [LinkedIn](https://www.linkedin.com/in/nrgarridoa)
+o [correo](mailto:nrgarridoa@gmail.com).
 
 ---
 
