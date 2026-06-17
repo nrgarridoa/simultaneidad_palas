@@ -25,13 +25,21 @@ equipos, las causas de detención y las pérdidas de producción en cada turno.
 
 ## Vista previa
 
-| Dashboard general | Gantt Día / Noche |
-|:---:|:---:|
-| ![Dashboard](screenshots/dashboard.png) | ![Gantt](screenshots/gantt.png) |
+### Vista diaria — Gantt de estados por turno
 
-| KPIs operativos | Detalle de detenciones |
+![Estados de equipos](screenshots/estados_equipos.png)
+
+### Indicadores y análisis de causas
+
+| KPIs operativos (6 indicadores) | Pareto de causas de detención |
 |:---:|:---:|
-| ![KPIs](screenshots/kpis.png) | ![Detalle](screenshots/detalle.png) |
+| ![KPIs](screenshots/kpis.png) | ![Pareto](screenshots/pareto.png) |
+
+### Disponibilidad por pala (heatmap) — vistas Semana y Mes
+
+| Semana | Mes |
+|:---:|:---:|
+| ![Disponibilidad semana](screenshots/disponibilidad_pala_semana.png) | ![Disponibilidad mes](screenshots/disponibilidad_pala_mes.png) |
 
 ---
 
@@ -74,28 +82,35 @@ Los datos revelan patrones críticos para la gestión del carguío:
 
 ## Secciones del dashboard
 
+### Vistas Día / Semana / Mes
+Selector de periodo que adapta todo el tablero:
+- **Día** → Gantt de estados por turno.
+- **Semana / Mes** → heatmap de disponibilidad (palas × días) coloreado de rojo a verde.
+
+Los KPIs, el Pareto y las tablas se recalculan para el periodo elegido.
+
 ### Gantt Día / Noche
 Línea de tiempo del estado de cada pala dividida en los dos turnos (Día 08:00-20:00,
 Noche 20:00-08:00). Cada barra es un bloque de estado (Operativo, Demora, Malogrado)
 con tooltip de horario. Permite ver de un vistazo cuántas palas operan en simultáneo
 y cuáles están detenidas en cada momento.
 
-### KPIs operativos
-Cuatro indicadores en tiempo real que responden al filtro de fecha y pala:
-disponibilidad promedio, toneladas perdidas, horas operativas y número de palas
-detenidas.
+### KPIs operativos y de confiabilidad
+Seis indicadores en tiempo real que responden a los filtros: disponibilidad promedio,
+toneladas perdidas, horas operativas, palas detenidas, **MTBF** (tiempo medio entre
+fallas) y **MTTR** (tiempo medio de reparación).
 
-### Tabla resumen de detenciones
-Resumen de las palas con falla en la fecha seleccionada, con horas de detención y
-pérdida de producción desglosada por modelo de equipo.
+### Pareto de causas de detención
+Barras de horas perdidas por causa (demoras operativas y fallas PM/NoPM) ordenadas de
+mayor a menor, con línea de porcentaje acumulado para identificar el 80/20.
 
-### Tabla detalle de detenciones
-Desglose por equipo con horas PM, NoPM y total, más el budget de producción y las
-toneladas perdidas por modelo. Incluye filtro por tipo de detención (Todos / PM / NoPM).
+### Tablas de detenciones
+Resumen por modelo y detalle por equipo (horas PM, NoPM, total, budget y toneladas
+perdidas), con filtro por tipo de detención (Todos / PM / NoPM) y exportación a CSV.
 
-### Navegación y exportación
-Navegación por fecha con flechas, filtro múltiple por pala y exportación a CSV de los
-datos filtrados.
+### Navegación
+Navegación por periodo con flechas (avanza por día, semana o mes según la vista) y
+filtro múltiple por pala.
 
 ---
 
